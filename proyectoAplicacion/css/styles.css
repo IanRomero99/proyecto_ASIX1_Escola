@@ -1,0 +1,368 @@
+/* GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p {
+    border-radius: 5px;
+}
+
+
+/* REGLAS ENLACES */
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.25vw;
+}
+
+
+/* REGLAS COLUMNAS */
+
+.column-2 {
+    width: 50%;
+    padding-left: 4%;
+}
+
+.column-4 {
+    width: 24.5%;
+    padding-left: 4%;
+}
+
+
+/* REGLAS MENU */
+
+#contMenu {
+    color: white;
+    background-color: darkslategrey;
+}
+
+
+/* REGLAS BODY */
+
+.cuerpoInicio {
+    background-image: url(../img/imagenFondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+    padding-top: 35%;
+}
+
+#contContTitulo {
+    padding-top: 5%;
+}
+
+
+/* REGLAS TITULO */
+
+#contTitulo {
+    background-color: lightgray;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+#tituloMenu {
+    color: white;
+}
+
+
+/* REGLAS INFORMACION */
+
+#contInformacion {
+    background-color: lightgray;
+    width: 55%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#informacion {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 1.75vw;
+    height: 50vh;
+    padding-top: 5%;
+}
+
+#contenedorImagen {
+    padding-top: 5%;
+}
+
+#imagen {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* REGLAS FORMULARIO */
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 95%;
+    height: 30px;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+#boton {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    width: 75%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: grey;
+}
+
+
+/* REGLAS TABLA */
+
+#tabla {
+    padding-top: 4%;
+}
+
+
+/* REGLAS FORMULARIO CREACIÓN USUARIO */
+
+#contenedorCrearUsuarios {
+    height: 65vh;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#formularioUsuarios {
+    background-color: lightgray;
+    width: 55%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ESTILOS BBDD */
+
+.base {
+    padding-top: 0.50%;
+}
+
+#contSelector {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 8vh;
+    background-image: url(../img/imagenFondo.jpg);
+}
+
+#selector {
+    padding-top: 15px;
+}
+
+#fondoBD {
+    background-image: url(../img/fondoBBDD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 100%;
+}
+
+
+/* PAGINACIÓN */
+
+table {
+    border-collapse: collapse;
+}
+
+.inline {
+    display: inline-block;
+    float: right;
+    margin: 20px 0px;
+}
+
+input,
+button {
+    height: 34px;
+}
+
+.pagination {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination a {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.pagination a.active {
+    background-color: pink;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: skyblue;
+}
+
+#numeros {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conTexto {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto {
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: gray;
+    border-radius: 5px;
+    font-size: 2vw;
+}
+
+.textoPequeño {
+    font-size: 1vw;
+}
+
+
+/* ESTILOS CORREO */
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+.fondo_correo {
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid #39c;
+    float: center;
+    height: 98vh;
+}
+
+.asunto_correo {
+    width: 300px;
+    padding: 10px;
+    float: center;
+}
+
+.mensaje_correo {
+    width: 300px;
+    padding: 10px;
+    float: center;
+}
+
+
+/* Reglas modificar usuario */
+
+.body {
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.colummn1mod {
+    width: 100%;
+    float: left;
+}
+
+.column2mod {
+    width: 50%;
+    float: left;
+}
+
+#contenedormodi {
+    background-color: lightgray;
+    width: 55%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #cuerpoInicio {
+        height: 100vh;
+    }
+    #titulo {
+        font-size: 6vw;
+    }
+    #imagen {
+        width: 75px;
+        height: 75px;
+    }
+    #paginaPresentacion {
+        padding-top: 30%;
+        width: 100%;
+    }
+    #menuNavegacion a {
+        font-size: 3.5vw;
+    }
+    .form {
+        font-size: 5vw;
+    }
+    #contTitulo {
+        width: 85%;
+    }
+    #contInformacion {
+        width: 85%;
+        height: 50vh;
+    }
+    .column-4 {
+        width: 10%;
+        font-size: 1vw;
+        padding-left: 4%;
+    }
+}
